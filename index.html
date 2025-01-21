@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">VirtuNexa-MapApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#section1">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section2">Features</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <h1>Explore the World with Interactive Maps</h1>
+            <p>Discover locations, Travel around world , Make memories and Find directions</p>
+        </div>
+    </header>
+
+    <!-- Section 1: About -->
+    <div id="section1" class="section">
+        <h2>About This Application</h2>
+        <p>This interactive map application allows users to explore various locations using Leaflet.js, a powerful JavaScript library for maps.</p>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-container">
+        <div id="map" class="container"></div>
+    </div>
+    
+
+    <!-- Section 2: Features -->
+    <div id="section2" class="section">
+        <h2>Features</h2>
+        <p>Customizable markers, pop-ups, and smooth navigation across the interface.</p>
+        <ul class="ul-elements">
+            <li >Landmarks</li>
+            <li>Easy Navigation</li>
+            <li>Extact Location finder</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MapApp. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

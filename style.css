@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    font-family: 'Poppins',Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #0a0909;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #425d8f;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #a971ab, #50e3c2);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3rem;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#map {
+    height: 400px;
+    margin: 20px 0;
+    
+}
+.map-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+.btn-primary {
+    transition: transform 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+.ul-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .ul-elements {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+}
+
